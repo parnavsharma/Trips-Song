@@ -1,0 +1,138 @@
+*{
+    margin:0px;
+    padding:0px;
+     box-sizing: border-box;
+}
+
+html{
+    font-size:62.5%;
+}
+
+.container{
+    background:#001d3d;;
+}
+.nav-link {
+    color: aliceblue;
+}
+nav{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+marquee{
+    color:rgb(5, 4, 4);
+    background-color: #ffdc2a;
+    height: 35px;
+    font-size: 25px;
+}
+#navbarNav{
+    font-size: 20px;
+}
+.navbar-brand{
+    font-size: 35px;
+    color:white;
+}
+.container .heading{
+    font-size: 3rem;
+    padding: 2rem 0;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0.5rem 1rem #000;
+    color:white;
+}
+.content-container{
+    align-items: center;
+}
+.container .music-container{
+    display: flex;
+    align-items: center;
+    flex-flow: column; 
+    
+}
+.content-container h2{
+    font-size:22px;
+    color:white;
+}
+.content-container a{
+    text-decoration: none;
+    font-size: 12px;
+    text-align: center;
+    padding-left: 15px;
+}
+#lyrics{
+    font-size: 18px;
+}
+.container a{
+    text-decoration: none;
+    padding-left:50px;
+    font-size: 12px;
+}
+
+.container .music-container .box{
+    height: 18rem;
+    width:80%;
+    display: flex;
+    align-items: center;
+    background: #f9ff99;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 1rem #000;
+    overflow: hidden;
+    margin:2rem ;
+}
+.container .music-container .box .image{
+    height: 100%;
+    width:25%;
+}
+
+.container .music-container .box .image img{
+    height:100%;
+    width:100%;
+    object-fit:cover;
+}
+.container .music-container .box .music
+{
+    width:75%;
+}
+
+.container .music-container .box .music audio
+{
+    width:100%;
+    outline: none;
+}
+.container .music-container .box .music audio::-webkit-media-controls-eclosure
+{
+    background:none;
+} 
+
+@media(max-width:800px){
+    
+    .container .music-container .box{
+        height: 27rem;
+        width:90%;
+        flex-flow: column;
+    }
+
+    .container .music-container .box .image{
+        height: 80%;
+        width: 100% ;
+    }
+    .content-container h2{
+        font-size:18px;
+    }
+}
+
+@media(min-width:400px){
+
+.container .music-container .box{
+        height: 27rem;
+        width:90%;
+        flex-flow: column;
+    }
+
+    .container .music-container .box .image{
+        height: 80%;
+        width: 100% ;
+    }
+    .content-container h2{
+        font-size: 16px;
+    }
+}
